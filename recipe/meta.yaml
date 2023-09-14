@@ -1,5 +1,5 @@
 {% set name = "pysubgroup" %}
-{% set version = "0.7.7" %}
+{% set version = "0.7.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pysubgroup-{{ version }}.tar.gz
-  sha256: 740a30576d85bc151bd57442ccffb47ef22b71e29f72a12370afc5b9fce72e8d
+  sha256: f3c9f227da78a3898a81459808e2a0cb0d18d4f3087f7f62483e6c681c65e349
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
